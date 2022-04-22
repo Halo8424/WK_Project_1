@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/font5/all.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Non Computer Users</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__logo-section">
+        <div class="header__logo-image">
+          <img class="logo-image" src="images/Gyre&Gimble-Img.png" alt="img" />
+        </div>
+      </div>
+      <!-- Menu tabs -->
+      <div class="header__menu-tabs">
+        <div class="header__menu-tab">
+          <a href="index.html" class="menu-tab-link">
+            <i class="fas fa-home"></i>
+          </a>
+        </div>
+        <div class="header__menu-tab">
+          <i class="fas fa-envelope">
+            <div class="header__notification-bubble">4</div>
+          </i>
+        </div>
+        <div class="header__menu-tab header__menu-tab--active">
+          <i class="fas fa-address-card"></i>
+        </div>
+        <div class="header__menu-tab">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="header__menu-tab">
+          <i class="fas fa-user-clock"></i>
+        </div>
+      </div>
+
+      <div class="header__account">
+        <div class="header__actions">
+          <div class="header__logo-search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search Employees" />
+          </div>
+          <!-- userImage,userName,Link circle btns. -->
+          <!-- <img
+            src="https://randomuser.me/api/portraits/men/54.jpg"
+            class="header__user-img"
+          />
+          <span class="header__user-name">Bruce Hill</span> -->
+
+          <!-- <a href="#" class="header__circle-link">
+            <i class="header__link-icon fas fa-plus"></i>
+          </a>
+          <a href="#" class="header__circle-link">
+            <i class="header__link-icon fas fa-bell"></i>
+          </a>
+          <a href="#" class="header__circle-link">
+            <i class="header__link-icon fas fa-sort-down"></i>
+          </a> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENT AREA -->
+    <section class="content-area content-area--feed">
+      <!-- SIDENAV -->
+      <section class="sidenav">
+        <div class="sidenav__item">
+          <div class="sidenav__item-icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <span class="sidenav__item-title"> My Profile </span>
+        </div>
+        <div class="sidenav__line"></div>
+
+        <div class="sidenav__item">
+          <div class="sidenav__item-icon">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <span class="sidenav__item-title"> Sales </span>
+        </div>
+        <div class="sidenav__line"></div>
+
+        <div class="sidenav__item">
+          <div class="sidenav__item-icon">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <span class="sidenav__item-title"> Performance </span>
+        </div>
+        <div class="sidenav__line"></div>
+
+        <div class="sidenav__item">
+          <div class="sidenav__item-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <span class="sidenav__item-title"> Calender </span>
+        </div>
+        <div class="sidenav__line"></div>
+
+        <div class="sidenav__item">
+          <div class="sidenav__item-icon">
+            <i class="fas fa-address-card"></i>
+          </div>
+          <span class="sidenav__item-title"> Employee Profile </span>
+        </div>
+        <div class="sidenav__line"></div>
+
+        <div class="sidenav__item">
+          <div class="sidenav__item-icon">
+            <i class="fas fa-user-clock"></i>
+          </div>
+          <span class="sidenav__item-title"> Time Off Request </span>
+        </div>
+        <div class="sidenav__line"></div>
+
+        <div class="sidenav__item">
+          <div class="sidenav__item-icon"></div>
+          <span class="sidenav__heading-title">Admin Tools</span>
+        </div>
+
+        <div class="sidenav__item">
+          <div class="sidenav__item-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <span class="sidenav__item-title"> Exporting </span>
+        </div>
+        <div class="sidenav__line"></div>
+
+        <div class="sidenav__item">
+          <div class="sidenav__item-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <span class="sidenav__item-title"> Onboarding </span>
+        </div>
+        <div class="sidenav__line"></div>
+      </section>
+
+      <!-- Feed Area -->
+      <section class="feed">
+        <!-- Upper Feed Area Section -->
+        <div class="feed__box submitpost">
+          <div class="newpost">
+            <h2 class="newpost__title">EMPLOYEE PROFILE</h2>
+            <h2 class="newpost__company-name">
+              Gyre & Gimble Site Preparation
+            </h2>
+          </div>
+        </div>
+        <!-- Main Feed Area -->
+        <div class="employee__main-container">
+          <div class="main__container-title">Address</div>
+          <form action="#">
+            <div class="user__details">
+              <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" />
+              </div>
+              <div class="input-box">
+                <span class="details">Preferred</span>
+                <input type="text" placeholder="Preferred Name"/>
+              </div>
+              <div class="input-box">
+                <span class="details">Marital Status</span>
+                <input type="text" />
+              </div>
+              <div class="input-box">
+                <span class="details">Home</span>
+                <input type="number" />
+              </div>
+              <div class="input-box">
+                <span class="details">Work</span>
+                <input type="number" />
+              </div>
+              <div class="input-box">
+                <span class="details">Work Email</span>
+                <input type="email" />
+              </div>
+              <div class="input-box">
+                <span class="details">Street</span>
+                <input type="text" />
+              </div>
+              <div class="input-box">
+                <span class="details">City/Town</span>
+                <input type="text" />
+              </div>
+              <div class="input-box">
+                <span class="details">State</span>
+                <!-- <input type="text" /> -->
+                <select class="state__dropdown">
+                  <option></option>
+                  <option>Alabama</option>
+                  <option>Alaska</option>
+                  <option>Arizona</option>
+                  <option>Arkansas</option>
+                  <option>Colorado</option>
+                  <option>Connecticut</option>
+                  <option>Delaware</option>
+                  <option>Florida</option>
+                  <option>Georga</option>
+                  <option>Hawaii</option>
+                  <option>Idaho</option>
+                  <option>Illinois</option>
+                  <option>Indiana</option>
+                  <option>Iowa</option>
+                  <option>Kansas</option>
+                  <option>Kentucky</option>
+                  <option>Louisiana</option>
+                  <option>Maine</option>
+                  <option>Maryland</option>
+                  <option>Massachusetts</option>
+                  <option>Michigan</option>
+                  <option>Minnesota</option>
+                  <option>Mississippi</option>
+                  <option>Montana</option>
+                  <option>Nebraska</option>
+                  <option>Nevada</option>
+                  <option>New Hampshire</option>
+                  <option>New Jersey</option>
+                  <option>New Mexico</option>
+                  <option>New York</option>
+                  <option>North Carolina</option>
+                  <option>North Dakota</option>
+                  <option>Ohio</option>
+                  <option>Oklahoma</option>
+                  <option>Oregon</option>
+                  <option>Pennsylvania</option>
+                  <option>Rhode Island</option>
+                  <option>South Carolina</option>
+                  <option>South Dokota</option>
+                  <option>Tennessee</option>
+                  <option>Texas</option>
+                  <option>Utah</option>
+                  <option>Vermont</option>
+                  <option>Virginia</option>
+                  <option>Washington</option>
+                  <option>West Virginia</option>
+                  <option>Wisconsin</option>
+                  <option>Wyoming</option>
+                </select>
+            
+              </div>
+              <div class="input-box">
+                <span class="details">Zip Code</span>
+                <input type="number" />
+              </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+              <span class="gender-title">Gender</span>
+              <div class="category">
+                <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                  <span class="dot three"></span>
+                  <span class="gender">Prefered not to answer</span>
+                </label>
+              </div>
+            </div>
+            <div class="button">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- RightSide Nav Pane -->
+      <section class="right-sidenav">
+        <div class="recent__arrivals">
+          <span class="sidenav__heading-title sidenav__heading-title--right"
+            >Recent Arrivals</span
+          >
+          <div class="sidenav__line sidenav__line-right-sidenav"></div>
+
+          <div class="sidenav__item sidenav__item-right--contact">
+            <img
+              src="https://randomuser.me/api/portraits/women/12.jpg"
+              class="sidenav__item-img"
+              alt=""
+            />
+            <span class="sidenav__item-title">
+              Charlotte Addison
+              <span class="sidenav__item-notification">
+                <div class="sidenav__item-notification-circle"></div>
+                2 days ago
+              </span>
+            </span>
+          </div>
+
+          <div class="sidenav__item sidenav__item-right--contact">
+            <img
+              src="https://randomuser.me/api/portraits/women/22.jpg"
+              class="sidenav__item-img"
+              alt=""
+            />
+            <span class="sidenav__item-title">
+              Sophia Cassidy
+              <span class="sidenav__item-notification">
+                <div class="sidenav__item-notification-circle"></div>
+                2 days ago
+              </span>
+            </span>
+          </div>
+
+          <div class="sidenav__item sidenav__item-right--contact">
+            <img
+              src="https://randomuser.me/api/portraits/women/32.jpg"
+              class="sidenav__item-img"
+              alt=""
+            />
+            <span class="sidenav__item-title">
+              Amelia Kennedy
+              <span class="sidenav__item-notification">
+                <div class="sidenav__item-notification-circle"></div>
+                12 days ago
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <div class="recent__arrivals">
+          <span class="sidenav__heading-title sidenav__heading-title--right"
+            >Birthdays</span
+          >
+          <div class="sidenav__line sidenav__line-right-sidenav"></div>
+
+          <div class="sidenav__item sidenav__item-right--contact">
+            <img
+              src="https://randomuser.me/api/portraits/women/13.jpg"
+              class="sidenav__item-img"
+              alt=""
+            />
+            <span class="sidenav__item-title">
+              Kaely Sky
+              <span class="sidenav__item-notification">
+                <div class="sidenav__item-notification-circle"></div>
+                today
+              </span>
+            </span>
+          </div>
+
+          <div class="sidenav__item sidenav__item-right--contact">
+            <img
+              src="https://randomuser.me/api/portraits/men/13.jpg"
+              class="sidenav__item-img"
+              alt=""
+            />
+            <span class="sidenav__item-title">
+              Benjamin Harris
+              <span class="sidenav__item-notification">
+                <div class="sidenav__item-notification-circle"></div>
+                in 4 days
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <div class="recent__arrivals">
+          <span class="sidenav__heading-title sidenav__heading-title--right"
+            >Work Anniversaries</span
+          >
+          <div class="sidenav__line sidenav__line-right-sidenav"></div>
+
+          <div class="sidenav__item sidenav__item-right--contact">
+            <img
+              src="https://randomuser.me/api/portraits/women/23.jpg"
+              class="sidenav__item-img"
+              alt=""
+            />
+            <span class="sidenav__item-title">
+              Isabella Fallon
+              <span class="sidenav__item-notification">
+                <div class="sidenav__item-notification-circle"></div>
+                2 years (in 4 days)
+              </span>
+            </span>
+          </div>
+
+          <div class="sidenav__item sidenav__item-right--contact">
+            <img
+              src="https://randomuser.me/api/portraits/men/21.jpg"
+              class="sidenav__item-img"
+              alt=""
+            />
+            <span class="sidenav__item-title">
+              Benjamin Harris
+              <span class="sidenav__item-notification">
+                <div class="sidenav__item-notification-circle"></div>
+                15 years (in 7 days)
+              </span>
+            </span>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
