@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS only -->
     <link rel="stylesheet" href="css/font5/all.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <!-- CSS only -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/payroll.css" />
     <title>Non Computer Users</title>
   </head>
   <body>
@@ -34,8 +32,10 @@
             <div class="header__notification-bubble">4</div>
           </i>
         </div>
-        <div class="header__menu-tab header__menu-tab--active">
-          <i class="fas fa-address-card"></i>
+        <div class="header__menu-tab">
+          <a href="employee.html" class="menu-tab-link">
+            <i class="fas fa-address-card"></i>
+          </a>
         </div>
         <div class="header__menu-tab">
           <a href="calendar.html" class="menu-tab-link">
@@ -49,6 +49,7 @@
         </div>
       </div>
       <!-- End Menu Tabs Container "Middle of Header Section" -->
+
       <!-- Search Container -->
       <div class="header__search-container">
         <div class="header__logo-search">
@@ -106,7 +107,11 @@
           <div class="sidenav__item-icon">
             <i class="fas fa-address-card"></i>
           </div>
-          <span class="sidenav__item-title"> Employee Profile </span>
+          <span class="sidenav__item-title"
+            ><a href="employee.html" class="sidenav-tab-link"
+              >Employee Profile</a
+            >
+          </span>
         </div>
         <div class="sidenav__line"></div>
 
@@ -151,133 +156,181 @@
         <!-- Upper Feed Area Section -->
         <div class="feed__box">
           <div class="newpost">
-            <h2 class="newpost__title">EMPLOYEE PROFILE</h2>
+            <h2 class="newpost__title">PayStub</h2>
             <h2 class="newpost__company-name">
               Gyre & Gimble Site Preparation
             </h2>
           </div>
         </div>
         <!-- Main Feed Area -->
-        <div class="employee__main-container">
-          <div class="main__container-title">Address</div>
-          <form action="#">
-            <div class="user__details">
-              <div class="input-box">
-                <span class="details">Full Name</span>
-                <input type="text" placeholder="Enter your name" />
+        <div class="feed__box main-post">
+          <!-- Main Feed LeftPane -->
+          <div class="feed__box-leftpane">
+            <div class="feed__box-msgBox">
+              <h3 style="margin-bottom: 20px" id="msgBox-title">
+                Pay Statement
+              </h3>
+              <p>Gyre & Gimble</p>
+              <p>Greenwich, MA</p>
+            </div>
+
+            <div class="feed__box-msgBox">
+              <h3></h3>
+              <p>Anthony F. Burns</p>
+              <p>337 Crescent Street</p>
+              <p>Greenwich, MA 01432</p>
+            </div>
+
+            <div class="feed__box-msgBox">
+              <h3>SSN XXX-XX-XXXX</h3>
+            </div>
+          </div>
+
+          <!-- Main Feed RightPane -->
+          <div class="feed__box-rightpane">
+            <div class="feed__box-msgBox feed__box-msgBox-payroll">
+              <h3 style="margin-bottom: 20px">
+                <a href="#">View pay history</a>
+              </h3>
+              <a href="#"></a>
+              <p></p>
+            </div>
+
+            <div class="feed__box-msgBox feed__box-msgBox-rightpane">
+              <h3>Date</h3>
+              <p>10/06/2021</p>
+            </div>
+
+            <div class="feed__box-msgBox feed__box-msgBox-rightpane">
+              <h3>Document Number</h3>
+              <p>5777072</p>
+            </div>
+
+            <div
+              class="feed__box-msgBox feed__box-msgBox-rightpane feed__box-msgBox-rightpane--pay"
+            >
+              <h3>Net Pay</h3>
+              <p>1757.77</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed__box payroll-info">
+          <div class="payroll-section-title"><h3>Details</h3></div>
+          <div class="container-test">
+            <div class="payroll-info__details-leftpane">
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Employee no</span>
+                <span class="payroll-info__data-txt">0079470</span>
               </div>
-              <div class="input-box">
-                <span class="details">Preferred</span>
-                <input type="text" placeholder="Preferred Name" />
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Location</span>
+                <span class="payroll-info__data-txt">6620086</span>
               </div>
-              <div class="input-box">
-                <span class="details">Marital Status</span>
-                <input type="text" />
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Bus Segment</span>
+                <span class="payroll-info__data-txt">61606</span>
               </div>
-              <div class="input-box">
-                <span class="details">Home</span>
-                <input type="number" />
-              </div>
-              <div class="input-box">
-                <span class="details">Work</span>
-                <input type="number" />
-              </div>
-              <div class="input-box">
-                <span class="details">Work Email</span>
-                <input type="email" />
-              </div>
-              <div class="input-box">
-                <span class="details">Street</span>
-                <input type="text" />
-              </div>
-              <div class="input-box">
-                <span class="details">City/Town</span>
-                <input type="text" />
-              </div>
-              <div class="input-box">
-                <span class="details">State</span>
-                <!-- <input type="text" /> -->
-                <select class="state__dropdown">
-                  <option></option>
-                  <option>Alabama</option>
-                  <option>Alaska</option>
-                  <option>Arizona</option>
-                  <option>Arkansas</option>
-                  <option>Colorado</option>
-                  <option>Connecticut</option>
-                  <option>Delaware</option>
-                  <option>Florida</option>
-                  <option>Georga</option>
-                  <option>Hawaii</option>
-                  <option>Idaho</option>
-                  <option>Illinois</option>
-                  <option>Indiana</option>
-                  <option>Iowa</option>
-                  <option>Kansas</option>
-                  <option>Kentucky</option>
-                  <option>Louisiana</option>
-                  <option>Maine</option>
-                  <option>Maryland</option>
-                  <option>Massachusetts</option>
-                  <option>Michigan</option>
-                  <option>Minnesota</option>
-                  <option>Mississippi</option>
-                  <option>Montana</option>
-                  <option>Nebraska</option>
-                  <option>Nevada</option>
-                  <option>New Hampshire</option>
-                  <option>New Jersey</option>
-                  <option>New Mexico</option>
-                  <option>New York</option>
-                  <option>North Carolina</option>
-                  <option>North Dakota</option>
-                  <option>Ohio</option>
-                  <option>Oklahoma</option>
-                  <option>Oregon</option>
-                  <option>Pennsylvania</option>
-                  <option>Rhode Island</option>
-                  <option>South Carolina</option>
-                  <option>South Dokota</option>
-                  <option>Tennessee</option>
-                  <option>Texas</option>
-                  <option>Utah</option>
-                  <option>Vermont</option>
-                  <option>Virginia</option>
-                  <option>Washington</option>
-                  <option>West Virginia</option>
-                  <option>Wisconsin</option>
-                  <option>Wyoming</option>
-                </select>
-              </div>
-              <div class="input-box">
-                <span class="details">Zip Code</span>
-                <input type="number" />
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Bus Unit</span>
+                <span class="payroll-info__data-txt">278</span>
               </div>
             </div>
-            <div class="gender-details">
-              <input type="radio" name="gender" id="dot-1" />
-              <input type="radio" name="gender" id="dot-2" />
-              <input type="radio" name="gender" id="dot-3" />
-              <span class="gender-title">Gender</span>
-              <div class="category">
-                <label for="dot-1">
-                  <span class="dot one"></span>
-                  <span class="gender">Male</span>
-                </label>
-                <label for="dot-2">
-                  <span class="dot two"></span>
-                  <span class="gender">Female</span>
-                </label>
-                <label for="dot-3">
-                  <span class="dot three"></span>
-                  <span class="gender">Prefered not to answer</span>
-                </label>
+            <div class="payroll-info__details-middlepane">
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">FIT</span>
+                <span class="payroll-info__data-txt">M O</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">SIT res</span>
+                <span class="payroll-info__data-txt">M O</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">SIT Work</span>
+                <span class="payroll-info__data-txt">M O</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Job Code</span>
+                <span class="payroll-info__data-txt">27846</span>
               </div>
             </div>
-            <div class="button">
-              <input type="submit" value="Submit" />
+            <div class="payroll-info__details-rightpane">
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Period start</span>
+                <span class="payroll-info__data-txt">09/17/2021</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Period end</span>
+                <span class="payroll-info__data-txt">09/30/2021</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Period group</span>
+                <span class="payroll-info__data-txt">Gyre & Gimble</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Job</span>
+                <span class="payroll-info__data-txt">G9G229G</span>
+              </div>
             </div>
-          </form>
+          </div>
+
+          <div class="payroll-section-title"><h3>Vacation</h3></div>
+          <div class="container-test">
+            <div class="payroll-info__details-leftpane">
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Employee</span>
+                <span class="payroll-info__data-txt">Anthony F. Burns</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Location</span>
+                <span class="payroll-info__data-txt">Greenwich, MA</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Vacation Earned</span>
+                <span class="payroll-info__data-txt">80</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Vacation Used</span>
+                <span class="payroll-info__data-txt">32</span>
+              </div>
+            </div>
+            <div class="payroll-info__details-middlepane">
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">FIT</span>
+                <span class="payroll-info__data-txt">M O</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">SIT res</span>
+                <span class="payroll-info__data-txt">M O</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">SIT Work</span>
+                <span class="payroll-info__data-txt">M O</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Job Code</span>
+                <span class="payroll-info__data-txt">27846</span>
+              </div>
+            </div>
+            <div class="payroll-info__details-rightpane">
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Period start</span>
+                <span class="payroll-info__data-txt">09/17/2021</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Period end</span>
+                <span class="payroll-info__data-txt">09/30/2021</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Hire Date</span>
+                <span class="payroll-info__data-txt">02/14/2018</span>
+              </div>
+              <div class="payroll-info__data">
+                <span class="payroll-info__data-title">Job</span>
+                <span class="payroll-info__data-txt">G9G229G</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- RightSide Nav Pane -->

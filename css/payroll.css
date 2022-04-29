@@ -248,9 +248,12 @@ header__menu-tab:hover .fab {
 
 .main-post {
   width: 100%;
-  height: 525px;
+  height: 200px;
   display: flex;
+  margin-bottom: 0;
   justify-content: space-between;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .feed__box-leftpane {
@@ -265,20 +268,81 @@ header__menu-tab:hover .fab {
   margin-bottom: 20px;
 }
 
-.feed__box-msgBox h3 {
-  font-size: 1.3rem;
+.feed__box-msgBox-rightpane {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.feed__box-msgBox-rightpane h3 {
   font-weight: 500;
-  margin-bottom: 5px;
+}
+
+.feed__box-msgBox-rightpane--pay {
+  padding: 5px;
+  border: 2px solid black;
+}
+
+#msgBox-title {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .feed__box-msgBox p {
   font-size: 0.9rem;
   color: var(--light-color-text);
 }
+
+.feed__box-msgBox-payroll {
+  display: flex;
+  justify-content: end;
+}
+
 .feed__box-msgBox a {
   margin-bottom: 2px;
 }
 
+.payroll-info {
+  height: 325px;
+  width: 100%;
+  overflow:scroll;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.payroll-section-title h3{
+    text-align: center;
+    font-size: 4rem;
+    font-weight:600;
+    color: var(--light-color-text);
+    opacity:0.3;
+}
+
+.container-test {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 5px 4px;
+  width: 100%;
+  height: 156px;
+  margin-bottom: 45px;
+}
+
+.payroll-info__data {
+  margin-bottom: 20px;
+}
+
+.payroll-info__data .payroll-info__data-title {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.payroll-info__data .payroll-info__data-txt {
+  font-size: 0.9rem;
+  color: var(--light-color-text);
+}
+
+/* RightSide Nav Styles */
 .right-sidenav {
   width: 25%;
   padding-left: 32px;
@@ -328,151 +392,4 @@ header__menu-tab:hover .fab {
 
 .menu-tab-link .fas {
   color: var(--light-color-text);
-}
-
-/* --------CSS Targeting employee.html----------- */
-.employee__main-container {
-  padding: 20px;
-  background: var(--white-background);
-  max-width: 700px;
-  width: 100%;
-  height: 580px;
-  flex: none;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  box-shadow: 0px 1px 2px 0px var(--shadow-color);
-  margin-bottom: 20px;
-}
-
-.main__container-title {
-  font-size: 1.8rem;
-  font-weight: 500;
-  position: relative;
-}
-
-.main__container-title::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 30px;
-  background: var(--blue);
-}
-
-.employee__main-container form .user__details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 0 12px 0;
-}
-
-form .user__details .input-box {
-  margin-bottom: 15px;
-  width: calc(100% / 2 - 20px);
-}
-
-.user__details .input-box .details {
-  display: block;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.user__details .input-box input {
-  height: 30px;
-  width: 100%;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  padding-left: 15px;
-  font-size: 0.7rem;
-  transition: all 0.3s ease;
-}
-
-.state__dropdown {
-  height: 30px;
-  width: 100%;
-  outline: none;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  padding-left: 15px;
-  font-size: 0.7rem;
-  transition: all 0.3s ease;
-}
-
-.user__details .input-box input:focus {
-  border-color: var(--blue);
-}
-
-form .gender-details .gender-title {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-form .gender-details .category {
-  display: flex;
-  width: 80%;
-  margin: 14px 0;
-  justify-content: space-between;
-}
-
-.gender-details .category label {
-  display: flex;
-  align-items: center;
-}
-
-.gender-details .category .dot {
-  height: 18px;
-  width: 18px;
-  background: #ccc;
-  border-radius: 50%;
-  margin-right: 10px;
-  border: 5px solid transparent;
-  transition: all 0.3s ease;
-}
-/* color for gender radio btn's */
-#dot-1:checked ~ .category label .one,
-#dot-2:checked ~ .category label .two,
-#dot-3:checked ~ .category label .three {
-  border-color: #ccc;
-  background: var(--blue);
-}
-
-form input[type="radio"] {
-  display: none;
-}
-
-form .button {
-  height: 45px;
-  margin: 45px 0;
-}
-
-form .button input {
-  height: 100%;
-  width: 100%;
-  outline: none;
-  color: #fff;
-  background: var(--button-link);
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-form .button input:hover {
-  background: var(--light-color-text);
-}
-
-/* Styles for benefit.html */
-.benefit-btns input {
-  outline: none;
-  color: #fff;
-  background: var(--light-color-text);
-  border-radius: 5px;
-  height: 30px;
-  width: 100%;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  cursor: pointer;
 }

@@ -7,69 +7,58 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="css/font5/all.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <!-- <script
-      src="https://kit.fontawesome.com/5cd268af28.js"
-      crossorigin="anonymous"
-    ></script> -->
     <link rel="stylesheet" href="css/styles.css" />
     <title>Non Computer Users</title>
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- HEADER Area-->
     <header class="header">
+      <!-- Logo Img Container -->
       <div class="header__logo-section">
         <div class="header__logo-image">
           <img class="logo-image" src="images/Gyre&Gimble-Img.png" alt="img" />
         </div>
       </div>
-      <!-- Menu tabs -->
-      <div class="header__menu-tabs">
+      <!-- End Logo Img Container -->
+
+      <!-- Menu Tabs Container "Middle of Header Section" -->
+      <div class="header__menu-tabs-container">
         <div class="header__menu-tab header__menu-tab--active">
           <i class="fas fa-home"></i>
         </div>
         <div class="header__menu-tab">
           <i class="fas fa-envelope">
-            <div class="header__notification-bubble">4</div>  
+            <div class="header__notification-bubble">4</div>
           </i>
         </div>
         <div class="header__menu-tab">
-            <a href="employee.html" class="menu-tab-link">
-                <i class="fas fa-address-card"></i> 
-            </a>  
+          <a href="employee.html" class="menu-tab-link">
+            <i class="fas fa-address-card"></i>
+          </a>
         </div>
         <div class="header__menu-tab">
-          <i class="fas fa-users"></i>
+          <a href="calendar.html" class="menu-tab-link">
+            <i class="fas fa-calendar-check"></i>
+          </a>
         </div>
         <div class="header__menu-tab">
-          <i class="fas fa-user-clock"></i>
+          <a href="contact.html" class="menu-tab-link">
+            <i class="fas fa-user-clock"></i>
+          </a>
         </div>
       </div>
+      <!-- End Menu Tabs Container "Middle of Header Section" -->
 
-      <div class="header__account">
-        <div class="header__actions">
-          <div class="header__logo-search">
-            <i class="fas fa-search"></i>
-            <input type="text" placeholder="Search Employees" />
-          </div>
-          <!-- userImage,userName,Link circle btns. -->
-          <!-- <img
-            src="https://randomuser.me/api/portraits/men/54.jpg"
-            class="header__user-img"
-          />
-          <span class="header__user-name">Bruce Hill</span> -->
-
-          <!-- <a href="#" class="header__circle-link">
-            <i class="header__link-icon fas fa-plus"></i>
-          </a>
-          <a href="#" class="header__circle-link">
-            <i class="header__link-icon fas fa-bell"></i>
-          </a>
-          <a href="#" class="header__circle-link">
-            <i class="header__link-icon fas fa-sort-down"></i>
-          </a> -->
+      <!-- Search Container -->
+      <div class="header__search-container">
+        <div class="header__logo-search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search Employees" />
         </div>
       </div>
+      <!-- End Search Container -->
     </header>
+    <!-- End Of HEADER Area -->
 
     <!-- CONTENT AREA -->
     <section class="content-area content-area--feed">
@@ -87,7 +76,9 @@
           <div class="sidenav__item-icon">
             <i class="fas fa-file-invoice-dollar"></i>
           </div>
-          <span class="sidenav__item-title"> Sales </span>
+          <span class="sidenav__item-title"
+            ><a href="payroll.html" class="sidenav-tab-link">Payroll</a>
+          </span>
         </div>
         <div class="sidenav__line"></div>
 
@@ -95,7 +86,9 @@
           <div class="sidenav__item-icon">
             <i class="fas fa-clipboard-check"></i>
           </div>
-          <span class="sidenav__item-title"> Performance </span>
+          <span class="sidenav__item-title"
+            ><a href="benefit.html" class="sidenav-tab-link">Benefits</a>
+          </span>
         </div>
         <div class="sidenav__line"></div>
 
@@ -103,7 +96,9 @@
           <div class="sidenav__item-icon">
             <i class="fas fa-calendar-check"></i>
           </div>
-          <span class="sidenav__item-title"> Calender </span>
+          <span class="sidenav__item-title"
+            ><a href="calendar.html" class="sidenav-tab-link">Calendar</a>
+          </span>
         </div>
         <div class="sidenav__line"></div>
 
@@ -111,7 +106,11 @@
           <div class="sidenav__item-icon">
             <i class="fas fa-address-card"></i>
           </div>
-          <span class="sidenav__item-title"> Employee Profile </span>
+          <span class="sidenav__item-title"
+            ><a href="employee.html" class="sidenav-tab-link"
+              >Employee Profile</a
+            >
+          </span>
         </div>
         <div class="sidenav__line"></div>
 
@@ -119,14 +118,11 @@
           <div class="sidenav__item-icon">
             <i class="fas fa-user-clock"></i>
           </div>
-          <span class="sidenav__item-title"> Time Off Request </span>
+          <span class="sidenav__item-title"
+            ><a href="contact.html" class="sidenav-tab-link">Contact Info</a>
+          </span>
         </div>
         <div class="sidenav__line"></div>
-
-        <div class="sidenav__item">
-          <div class="sidenav__item-icon"></div>
-          <span class="sidenav__heading-title">Admin Tools</span>
-        </div>
 
         <div class="sidenav__item">
           <div class="sidenav__item-icon">
@@ -140,15 +136,24 @@
           <div class="sidenav__item-icon">
             <i class="fas fa-users"></i>
           </div>
-          <span class="sidenav__item-title"> Onboarding </span>
+          <span class="sidenav__item-title"
+            ><a href="index.html" class="sidenav-tab-link">Employee Options</a>
+          </span>
         </div>
         <div class="sidenav__line"></div>
+
+        <div class="sidenav__item">
+          <div class="sidenav__item-icon"></div>
+          <span class="sidenav__heading-title"
+            ><a href="login.html">SignOut</a></span
+          >
+        </div>
       </section>
 
       <!-- Feed Area -->
       <section class="feed">
         <!-- Upper Feed Area Section -->
-        <div class="feed__box submitpost">
+        <div class="feed__box">
           <div class="newpost">
             <h2 class="newpost__title">HOME</h2>
             <h2 class="newpost__company-name">
@@ -157,7 +162,7 @@
           </div>
         </div>
         <!-- Main Feed Area -->
-        <div class="feed__box photopost">
+        <div class="feed__box main-post">
           <!-- Main Feed LeftPane -->
           <div class="feed__box-leftpane">
             <div class="feed__box-msgBox">
@@ -248,7 +253,7 @@
               alt=""
             />
             <span class="sidenav__item-title">
-              Charlotte Addison
+              Lailani Alexis
               <span class="sidenav__item-notification">
                 <div class="sidenav__item-notification-circle"></div>
                 2 days ago
@@ -315,7 +320,7 @@
               alt=""
             />
             <span class="sidenav__item-title">
-              Benjamin Harris
+              Thomas Harris
               <span class="sidenav__item-notification">
                 <div class="sidenav__item-notification-circle"></div>
                 in 4 days
@@ -337,7 +342,7 @@
               alt=""
             />
             <span class="sidenav__item-title">
-                Isabella Fallon
+              Isabella Fallon
               <span class="sidenav__item-notification">
                 <div class="sidenav__item-notification-circle"></div>
                 2 years (in 4 days)
