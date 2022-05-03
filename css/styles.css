@@ -336,7 +336,7 @@ header__menu-tab:hover .fab {
   background: var(--white-background);
   max-width: 700px;
   width: 100%;
-  height: 580px;
+  height: 570px;
   flex: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -377,6 +377,11 @@ header__menu-tab:hover .fab {
 
 .tab button:hover{
   background-color: #ddd;
+}
+
+.tabcontent{
+  /* display: none; */
+  border-top: none;
 }
 
 
@@ -484,7 +489,7 @@ form .button {
 }
 
 form .button input {
-  height: 100%;
+  height: 32px;
   width: 100%;
   outline: none;
   color: #fff;
