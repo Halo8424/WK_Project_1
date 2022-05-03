@@ -346,9 +346,14 @@ header__menu-tab:hover .fab {
 
 .tabs-container{
   display: flex;
-  width: 100%;
+  width: 100%; 
   
-  
+}
+
+@media only screen and (min-width:1500px){
+  .tabs-container{
+    margin-left:66px;
+  }
 }
 
 .main__container-title {
