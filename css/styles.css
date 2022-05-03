@@ -344,6 +344,13 @@ header__menu-tab:hover .fab {
   margin-bottom: 20px;
 }
 
+.tabs-container{
+  display: flex;
+  width: 100%;
+  
+  
+}
+
 .main__container-title {
   font-size: 1.8rem;
   font-weight: 500;
