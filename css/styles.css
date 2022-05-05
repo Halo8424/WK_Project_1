@@ -151,6 +151,16 @@ header__menu-tab:hover .fab {
   cursor: pointer;
 }
 
+#signOut{
+  text-decoration: none;
+  color: var(--blue);
+}
+
+#signOut:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
 .sidenav__item-icon {
   width: 40px;
   height: 40px;
