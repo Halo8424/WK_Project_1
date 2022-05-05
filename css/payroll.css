@@ -171,6 +171,10 @@ header__menu-tab:hover .fab {
   color: var(--light-color-text);
 }
 
+.sidenav__item-title--left{
+  font-size: 1.3rem;
+}
+
 .sidenav-tab-link {
   text-decoration: none;
   color: var(--light-color-text);
@@ -411,11 +415,6 @@ header__menu-tab:hover .fab {
   width: 40px;
   margin-right: 20px;
   object-fit: cover;
-}
-
-.sidenav__item-title {
-  font-size: 1rem;
-  font-weight: 400;
 }
 
 .sidenav__item-notification {
