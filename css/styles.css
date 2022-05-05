@@ -262,7 +262,7 @@ header__menu-tab:hover .fab {
 
 .main-post {
   width: 100%;
-  height: 525px;
+  height: 555px;
   display: flex;
   justify-content: space-between;
 }
@@ -525,4 +525,20 @@ form .button input:hover {
   font-size: 1rem;
   letter-spacing: 1px;
   cursor: pointer;
+}
+
+.benefit-btns a{
+  width: 100%;
+  font-size: .8rem;
+  background: var(--blue);
+  padding: 11px 25px;
+  color: #fff;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  display: block;
+  text-decoration: none;
+}
+
+.benefit-btns a:hover{
+  background:  #0389ff;
 }
