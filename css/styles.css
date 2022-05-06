@@ -352,7 +352,7 @@ header__menu-tab:hover .fab {
   box-shadow: 0px 1px 2px 0px var(--shadow-color);
   margin-bottom: 20px;
 }
-
+/* -----------Styles for tabs tagged for deletion */
 .tabs-container{
   display: flex;
   width: 100%; 
@@ -393,6 +393,7 @@ header__menu-tab:hover .fab {
   border-top: none;
 }
 
+/* ------------End of tabs Section */
 
 .main__container-title {
   font-size: 1.8rem;
