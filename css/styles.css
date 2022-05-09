@@ -516,7 +516,7 @@ form .button input:hover {
 }
 
 /* Styles for benefit.html */
-.benefit-btns input {
+/* .benefit-btns input {
   outline: none;
   color: #fff;
   background: var(--light-color-text);
@@ -542,4 +542,4 @@ form .button input:hover {
 
 .benefit-btns a:hover{
   background:  #0389ff;
-}
+} */
