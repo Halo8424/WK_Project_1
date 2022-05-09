@@ -63,7 +63,9 @@
           <div class="sidenav__item-icon">
             <i class="fas fa-user"></i>
           </div>
-          <span class="sidenav__item-title sidenav__item-title--left"> My Profile </span>
+          <span class="sidenav__item-title sidenav__item-title--left">
+            My Profile
+          </span>
         </div>
         <div class="sidenav__line"></div>
 
@@ -113,7 +115,9 @@
           <div class="sidenav__item-icon">
             <i class="fas fa-user-clock"></i>
           </div>
-          <span class="sidenav__item-title sidenav__item-title--left"> Contact Info </span>
+          <span class="sidenav__item-title sidenav__item-title--left">
+            Contact Info
+          </span>
         </div>
         <div class="sidenav__line"></div>
 
@@ -121,7 +125,9 @@
           <div class="sidenav__item-icon">
             <i class="fas fa-chart-bar"></i>
           </div>
-          <span class="sidenav__item-title sidenav__item-title--left"> Exporting </span>
+          <span class="sidenav__item-title sidenav__item-title--left">
+            Exporting
+          </span>
         </div>
         <div class="sidenav__line"></div>
 
@@ -155,38 +161,100 @@
           </div>
         </div>
         <!-- Main Feed Area -->
-       
+
         <div class="feed__box main-post">
-          <!-- Main Feed LeftPane -->
-          <div class="feed__box-leftpane">
-            <div class="feed__box-msgBox">
-              <h3 style="margin-bottom: 20px">Name</h3>
-              <p>Burns. Sarah E</p>
-            </div>
-            <div class="button">
-              <input type="submit" value="Add" />
-            </div>
-            
+          <div class="main-post__title">
+            <h2>Emergency Contact Information</h2>
+            <div class="main-post__title-line"></div>
           </div>
-          <!-- Main Feed RightPane -->
-          <div class="feed__box-rightpane">
-            <div class="feed__box-msgBox">
-              <h3 style="margin-bottom: 20px">Designation</h3>
-
-              <input type="checkbox" id="Dependent" />
-              <label for="Dependent">Dependent</label>
+          <div class="emergency-contacts">
+            <form action="#">
+              <div class="emergency-contact-details">
+                <div class="input-box">
+                  <span class="details">Full Name:</span>
+                  <input type="text" placeholder="Enter your name" />
+                </div>
+                <div class="input-box">
+                  <span class="details">Relationship:</span>
+                  <input type="text" placeholder="Spouse" />
+                </div>
+              </div>
+              <div class="emergency-contact-details">
+                <div class="input-box">
+                  <span class="details">Home Address:</span>
+                  <input type="text" placeholder="" />
+                </div>
+                <div class="input-box">
+                  <span class="details">City:</span>
+                  <input type="text" placeholder="" />
+                </div>
+              </div>
+              <div class="emergency-contact-details">
+                <div class="input-box">
+                  <span class="details">State:</span>
+                  <input type="text" placeholder="" />
+                </div>
+                <div class="input-box">
+                  <span class="details">Zip:</span>
+                  <input type="text" placeholder="" />
+                </div>
+              </div>
+              <div class="emergency-contact-details">
+                <div class="input-box">
+                  <span class="details">Home Number:</span>
+                  <input type="text" placeholder="" />
+                </div>
+                <div class="input-box">
+                  <span class="details">Cell Number:</span>
+                  <input type="text" placeholder="" />
+                </div>
+              </div>
+              <div class="emergency-contact-details">
+                <div class="input-box">
+                  <span class="details">Notes:</span>
+                </div>
+                <div class="input-box">
+                  <!-- <span class="details">Cell Number:</span> -->
+                  <textarea
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="5"
+                    placeholder="Type Notes Here"
+                  ></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="main-post__sub-title">
+            <h2>Designation</h2>
+            <div class="main-post__title-line"></div>
+            <p>Check All That Apply</p>
+          </div>
+          <div class="feed__box-msgBox">
+            <input type="checkbox" id="Dependent" />
+            <label for="Dependent">Dependent</label>
+          </div>
+          <div class="feed__box-msgBox">
+            <h3></h3>
+            <input type="checkbox" id="Emergency-contact" />
+            <label for="Emergency-contact">EmergencyContact</label>
+          </div>
+          <div class="feed__box-msgBox">
+            <h3></h3>
+            <input type="checkbox" id="Beneficiary" />
+            <label for="Beneficiary">Beneficiary</label>
+          </div>
+          <div class="emergency-contact-details">
+            <div class="input-box">
             </div>
-
-            <div class="feed__box-msgBox">
-              <h3></h3>
-              <input type="checkbox" id="Emergency-contact" />
-              <label for="Emergency-contact">EmergencyContact</label>
-            </div>
-
-            <div class="feed__box-msgBox">
-              <h3></h3>
-              <input type="checkbox" id="Beneficiary" />
-              <label for="Beneficiary">Beneficiary</label>
+            <!-- <div class="input-box">
+              <input type="button" value="Confirm Emergency Contact Info" />
+            </div> -->
+            <div class="input-box">
+              <div class="button benefit-btns">
+                <a class="newEmployeeBenefitBtn"href="#">Next Page</a>
+              </div>
             </div>
           </div>
         </div>
@@ -325,3 +393,33 @@
 
 <!-- Cliff Hanger -->
 <!-- Look to adding more content to fill in white space, Think of adding a previous & next btns -->
+<!-- <div class="feed__box-leftpane">
+            <div class="feed__box-msgBox">
+              <h3 style="margin-bottom: 20px">Name</h3>
+              <p>Burns. Sarah E</p>
+            </div>
+            <div class="button">
+              <input type="submit" value="Add" />
+            </div>
+           </div> -->
+<!-- Main Feed RightPane -->
+<!-- <div class="feed__box-rightpane">
+            <div class="feed__box-msgBox">
+              <h3 style="margin-bottom: 20px">Designation</h3>
+
+              <input type="checkbox" id="Dependent" />
+              <label for="Dependent">Dependent</label>
+            </div>
+
+            <div class="feed__box-msgBox">
+              <h3></h3>
+              <input type="checkbox" id="Emergency-contact" />
+              <label for="Emergency-contact">EmergencyContact</label>
+            </div>
+
+            <div class="feed__box-msgBox">
+              <h3></h3>
+              <input type="checkbox" id="Beneficiary" />
+              <label for="Beneficiary">Beneficiary</label>
+            </div>
+          </div> -->
