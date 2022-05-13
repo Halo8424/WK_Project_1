@@ -344,7 +344,7 @@
     color: #fff;
     background: var(--light-color-text);
     border-radius: 5px;
-    height: 30px;
+    height: 30px; 
     width: 100%;
     font-size: 1rem;
     letter-spacing: 1px;
