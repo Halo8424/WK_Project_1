@@ -280,8 +280,14 @@
       padding: 5px;
   }
 
+ .details-right{
+    margin-left: 10px;
+  }
+
   .input-box{
       width: 100%;
+      display:flex;
+      justify-content: space-between;
   }
 
   .input-box input{
@@ -293,6 +299,10 @@
   .input-box textarea{
       border: 1px solid #ccc;
       border-radius: 5px;
+  }
+
+  .btn-container{
+    width: 100%;
   }
 
   .main-post__sub-title h2{
