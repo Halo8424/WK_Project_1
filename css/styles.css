@@ -401,7 +401,7 @@ header__menu-tab:hover .fab {
   position: relative;
 }
 
-.main__container-title::before {
+/* .main__container-title::before {
   content: "";
   position: absolute;
   left: 0;
@@ -409,7 +409,7 @@ header__menu-tab:hover .fab {
   height: 3px;
   width: 30px;
   background: var(--blue);
-}
+} */
 
 .employee__main-container form .user__details {
   display: flex;
