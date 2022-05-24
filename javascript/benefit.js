@@ -1,7 +1,7 @@
 document.getElementById("shopping-cart").onclick = function () {
-    changeImg();
+  changeImg();
 };
 
-function changeImg(){
-    document.getElementById("shopping-cart").src="images/New-shopping-cart-img-004Final.jpg"
-};
+function changeImg() {
+  document.getElementById("shopping-cart").src = "images/cart_filled.png";
+}
