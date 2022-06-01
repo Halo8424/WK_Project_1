@@ -515,31 +515,45 @@ form .button input:hover {
   background: var(--light-color-text);
 }
 
-/* Styles for benefit.html */
-/* .benefit-btns input {
-  outline: none;
-  color: #fff;
-  background: var(--light-color-text);
-  border-radius: 5px;
-  height: 30px;
-  width: 100%;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  cursor: pointer;
+@media only screen and (max-width: 1024px){
+  .header__menu-tabs-container{
+    max-width: 530px;
+  }
+  .header__menu-tab {
+    font-size: 1.2rem;
+  }
+  .header__logo-search input[type="text"]{
+    font-size: 1rem;
+  }
+  .content-area--feed{
+    padding: 90px 15px 20px 15px;
+  }
+  .sidenav__item-icon{
+    font-size:18px;
+  }
+  .sidenav__item-title--left{
+    font-size: 1rem;
+  }
+  .sidenav__heading-title{
+    font-size: 1rem;
+  } 
+  .sidenav__line{
+    width: 215px;
+  }
+  .newpost__title{
+    font-size: 1.2rem;
+  }
+  .feed__box-msgBox h3{
+    font-size: 1.1rem;
+  }
+  .feed__box-msgBox p{
+    font-size: 0.8rem;
+  }
+  .feed__box-msgBox a{
+    font-size: 1rem;
+  }
+  .sidenav__item-img{
+    height: 35px;
+    width: 35px;
+  }
 }
-
-.benefit-btns a{
-  width: 100%;
-  font-size: .8rem;
-  background: var(--blue);
-  padding: 11px 25px;
-  color: #fff;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  display: block;
-  text-decoration: none;
-}
-
-.benefit-btns a:hover{
-  background:  #0389ff;
-} */
