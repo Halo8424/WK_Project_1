@@ -443,6 +443,14 @@ header__menu-tab:hover .fab {
   color: var(--light-color-text);
 }
 
+.print-btn-container{
+  display:flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+
+
 /* media query for windows 11 virtual machine  */
 @media only screen and (max-width: 1024px){
   .header__menu-tabs-container{
