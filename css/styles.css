@@ -515,7 +515,7 @@ form .button input:hover {
   background: var(--light-color-text);
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1023px){
   .header__menu-tabs-container{
     max-width: 530px;
   }
@@ -558,47 +558,3 @@ form .button input:hover {
   }
 }
 
-/* Windows 11 virtual machine media query  */
-@supports (-ms-ime-align:auto) {           
-  /* Input Microsoft Edge Styling */ 
-  .header__menu-tabs-container{
-    max-width: 530px;
-  }
-  .header__menu-tab {
-    font-size: 1.2rem;
-  }
-  .header__logo-search input[type="text"]{
-    font-size: 1rem;
-  }
-  .content-area--feed{
-    padding: 90px 15px 20px 15px;
-  }
-  .sidenav__item-icon{
-    font-size:18px;
-  }
-  .sidenav__item-title--left{
-    font-size: 1rem;
-  }
-  .sidenav__heading-title{
-    font-size: 1rem;
-  } 
-  .sidenav__line{
-    width: 215px;
-  }
-  .newpost__title{
-    font-size: 1.2rem;
-  }
-  .feed__box-msgBox h3{
-    font-size: 1.1rem;
-  }
-  .feed__box-msgBox p{
-    font-size: 0.8rem;
-  }
-  .feed__box-msgBox a{
-    font-size: 1rem;
-  }
-  .sidenav__item-img{
-    height: 35px;
-    width: 35px;
-  }       
- } 
