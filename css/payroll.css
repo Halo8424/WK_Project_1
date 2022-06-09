@@ -452,7 +452,7 @@ header__menu-tab:hover .fab {
 
 
 /* media query for windows 11 virtual machine  */
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1025px){
   .header__menu-tabs-container{
     max-width: 530px;
   }
