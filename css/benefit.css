@@ -371,3 +371,53 @@
       height:auto;
       width: 275px;
   }
+
+  /* media query for windows 11 virtual machine  */
+@media only screen and (max-width: 1025px){
+  .header__menu-tabs-container{
+    max-width: 530px;
+  }
+  .header__menu-tab {
+    font-size: 1.2rem;
+  }
+  .header__logo-search input[type="text"]{
+    font-size: 1rem;
+  }
+  .content-area--feed{
+    padding: 90px 15px 20px 15px;
+  }
+  .sidenav__item-icon{
+    font-size:18px;
+  }
+  .sidenav__item-title--left{
+    font-size: 1rem;
+  }
+  .sidenav__heading-title{
+    font-size: 1rem;
+  } 
+  .sidenav__line{
+    width: 215px;
+  }
+  
+  .newpost__title{
+    font-size: 1.2rem;
+  }
+  
+  .sidenav__item-img{
+    height: 35px;
+    width: 35px;
+  }
+  /* page specific media query */
+  .feed__box-msgBox img{
+    height: auto;
+    width: 225px;
+  }
+
+  .feed__box-msgBox a{
+    font-size: .6rem;
+  }
+
+  .feed__box-msgBox h3{
+    font-size: 1.1rem;
+  }
+}
