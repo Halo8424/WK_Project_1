@@ -515,7 +515,7 @@ form .button input:hover {
   background: var(--light-color-text);
 }
 
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1025px){
   .header__menu-tabs-container{
     max-width: 530px;
   }
