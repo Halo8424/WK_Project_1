@@ -427,3 +427,57 @@
   .menu-tab-link .fas {
     color: var(--light-color-text);
   }
+
+  /* media query for windows 11 virtual machine  */
+@media only screen and (max-width: 1025px){
+  .header__menu-tabs-container{
+    max-width: 530px;
+  }
+  .header__menu-tab {
+    font-size: 1.2rem;
+  }
+  .header__logo-search input[type="text"]{
+    font-size: 1rem;
+  }
+  .content-area--feed{
+    padding: 90px 15px 20px 15px;
+  }
+  .sidenav__item-icon{
+    font-size:18px;
+  }
+  .sidenav__item-title--left{
+    font-size: 1rem;
+  }
+  .sidenav__heading-title{
+    font-size: 1rem;
+  } 
+  .sidenav__line{
+    width: 215px;
+  }
+  .newpost__title{
+    font-size: 1.2rem;
+  }
+  .feed__box-msgBox a{
+    font-size: 1rem;
+  }
+  .sidenav__item-img{
+    height: 35px;
+    width: 35px;
+  }
+  /* page specific media query */
+  .main-post__title h2{
+    font-size: 1.1rem;
+  }
+  .details{
+    font-size: .8rem;
+  }
+  .main-post__sub-title h2 {
+    font-size: 1.1rem;
+  }
+  .feed__box-msgBox > label{
+    font-size: .9rem;
+  }
+  .benefit-btns a {
+    width: 55%;
+  }
+}
