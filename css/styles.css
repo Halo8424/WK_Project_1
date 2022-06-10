@@ -178,7 +178,7 @@ header__menu-tab:hover .fab {
 .sidenav__item-title {
   font-size: 1rem;
   font-weight: 400;
-  color: var(--light-color-text);
+  color: var(--dark-color-text);
 }
 
 .sidenav__item-title--left{
@@ -187,7 +187,7 @@ header__menu-tab:hover .fab {
 
 .sidenav-tab-link {
   text-decoration: none;
-  color: var(--light-color-text);
+  color: var(--dark-color-text);
 }
 
 .sidenav-tab-link:hover,
@@ -427,6 +427,7 @@ form .user__details .input-box {
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
+  color: var(--dark-color-text);
 }
 
 .user__details .input-box input {

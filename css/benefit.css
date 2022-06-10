@@ -178,7 +178,7 @@
   .sidenav__item-title {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--light-color-text);
+    color: var(--dark-color-text);
   }
   
   .sidenav__item-title--left{
@@ -187,7 +187,7 @@
   
   .sidenav-tab-link {
     text-decoration: none;
-    color: var(--light-color-text);
+    color: var(--dark-color-text);
   }
   
   .sidenav-tab-link:hover,
